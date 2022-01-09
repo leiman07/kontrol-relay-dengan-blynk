@@ -1,0 +1,34 @@
+/*
+Youtube.com/LeimanGoVlog
+Tokopedia.com/tridipiproject
+saweria.co/leimangovlog
+instagram/tridipi.project
+github.com/leiman07
+leimanilmu.blogspot.com
+*/
+
+//Cara kontrol relay dengan aplikasi BLYNK
+
+#define BLYNK_PRINT Serial
+#include <ESP8266WiFi.h>
+#include <BlynkSimpleEsp8266.h>
+
+char auth[] = "kode_otentikasi_kalian";
+char ssid[] = "nama_wifi_anda";
+char pass[] = "password_wifi_anda";
+
+void setup()
+{
+  // Debug console
+  Serial.begin(9600);
+  Blynk.begin(auth, ssid, pass);
+}
+
+void loop()
+{
+  Blynk.run();
+}
+
+//PROJECT : Cara kontrol relay dengan aplikasi BLYNK
+//DIBUAT  : TRIDIPI.PROJECT
+//TANGGAL : 07/12/2021
